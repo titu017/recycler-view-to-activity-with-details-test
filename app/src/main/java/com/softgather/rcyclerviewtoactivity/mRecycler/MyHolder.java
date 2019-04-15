@@ -22,6 +22,8 @@ public class MyHolder extends ViewHolder implements View.OnClickListener {
 
         playerName = itemView.findViewById(R.id.textTv);
         playerImage = itemView.findViewById(R.id.imageIv);
+
+        itemView.setOnClickListener(this);
     }
 
     public void setItemClickListener(ItemClickListener itemClickListener){
