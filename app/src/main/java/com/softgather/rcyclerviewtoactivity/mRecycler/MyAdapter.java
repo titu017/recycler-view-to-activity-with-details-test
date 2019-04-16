@@ -39,16 +39,18 @@ public class MyAdapter extends RecyclerView.Adapter<MyHolder> {
     public void onBindViewHolder(@NonNull MyHolder myHolder, int position) {
         final String name = bdPlayers.get(position).getPlayerName();
         final int image = bdPlayers.get(position).getPlayerImage();
+        final String detail = bdPlayers.get(position).getPlayerDetail();
 
         //Bind Data
 
         myHolder.playerName.setText(name);
-        myHolder.playerImage.setImageResource(image);
+//        myHolder.playerImage.setImageResource(image);
+        myHolder.playerDetail.setText(detail);
 
         myHolder.setItemClickListener(new ItemClickListener() {
             @Override
             public void onItemClick(int pos) {
-                openDetailsActivity(name,image);
+                openDetailsActivity(name,image,detail);
 
             }
         });
@@ -60,13 +62,14 @@ public class MyAdapter extends RecyclerView.Adapter<MyHolder> {
         return bdPlayers.size();
     }
 
-    private void openDetailsActivity(String name, int image){
+    private void openDetailsActivity(String name, int image, String detail){
         Intent intent = new Intent(context,ActivityDetails.class);
 
         //Pack Data to Send
 
         intent.putExtra("NAME_KEY", name);
         intent.putExtra("IMAGE_KEY", image);
+        intent.putExtra("DETAIL_KEY", detail);
 
         //Open Activity
 

@@ -16,31 +16,38 @@ public class BdPlayerCollection {
         bdplayer = new BdPlayer();
         bdplayer.setPlayerName("Mashrafe");
         bdplayer.setPlayerImage(R.drawable.masrafe);
+        bdplayer.setPlayerDetail("True");
+        bdPlayers.add(bdplayer);
+
+
+        bdplayer = new BdPlayer();
+        bdplayer.setPlayerName("Mashrafe");
+        bdplayer.setPlayerImage(R.drawable.masrafe);
+        bdplayer.setPlayerDetail("False");
         bdPlayers.add(bdplayer);
 
         bdplayer = new BdPlayer();
         bdplayer.setPlayerName("Mashrafe");
         bdplayer.setPlayerImage(R.drawable.masrafe);
+        bdplayer.setPlayerDetail("dfgdfgdfg");
         bdPlayers.add(bdplayer);
 
         bdplayer = new BdPlayer();
         bdplayer.setPlayerName("Mashrafe");
         bdplayer.setPlayerImage(R.drawable.masrafe);
+        bdplayer.setPlayerDetail("sxdsggdfgdfg");
         bdPlayers.add(bdplayer);
 
         bdplayer = new BdPlayer();
         bdplayer.setPlayerName("Mashrafe");
         bdplayer.setPlayerImage(R.drawable.masrafe);
+        bdplayer.setPlayerDetail("Fasdfsdfsdfse");
         bdPlayers.add(bdplayer);
 
         bdplayer = new BdPlayer();
         bdplayer.setPlayerName("Mashrafe");
         bdplayer.setPlayerImage(R.drawable.masrafe);
-        bdPlayers.add(bdplayer);
-
-        bdplayer = new BdPlayer();
-        bdplayer.setPlayerName("Mashrafe");
-        bdplayer.setPlayerImage(R.drawable.masrafe);
+        bdplayer.setPlayerDetail("Hero");
         bdPlayers.add(bdplayer);
 
         return bdPlayers;

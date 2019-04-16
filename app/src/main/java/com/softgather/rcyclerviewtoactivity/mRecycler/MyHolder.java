@@ -9,10 +9,13 @@ import android.widget.TextView;
 
 import com.softgather.rcyclerviewtoactivity.R;
 
+import org.w3c.dom.Text;
+
 public class MyHolder extends ViewHolder implements View.OnClickListener {
 
     TextView playerName;
     ImageView playerImage;
+    TextView playerDetail;
 
     ItemClickListener itemClickListener;
 
@@ -22,6 +25,7 @@ public class MyHolder extends ViewHolder implements View.OnClickListener {
 
         playerName = itemView.findViewById(R.id.textTv);
         playerImage = itemView.findViewById(R.id.imageIv);
+        playerDetail = itemView.findViewById(R.id.textTv2 );
 
         itemView.setOnClickListener(this);
     }
