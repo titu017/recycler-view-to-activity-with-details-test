@@ -16,7 +16,7 @@ public class BdPlayerCollection {
         bdplayer = new BdPlayer();
         bdplayer.setPlayerName("Mashrafe");
         bdplayer.setPlayerImage(R.drawable.masrafe);
-        bdplayer.setPlayerDetail("True");
+        bdplayer.setPlayerDetail("");
         bdPlayers.add(bdplayer);
 
 

@@ -28,7 +28,15 @@ public class MyAdapter extends RecyclerView.Adapter<MyHolder> {
     @Override
     public MyHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
 
-        View view = LayoutInflater.from(context).inflate(R.layout.model,null);
+        //We won't use this LayoutInflater. It creates alignment problem in RecyclerView
+        // View view = LayoutInflater.from(context).inflate(R.layout.model,null);
+
+
+        //we will use this inflater for proper design in recyclerview
+
+        View view = LayoutInflater.from(context).inflate(R.layout.model,viewGroup, false);
+
+
 
         MyHolder myHolder = new MyHolder(view);
 
